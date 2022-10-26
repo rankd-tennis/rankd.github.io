@@ -128,7 +128,7 @@ section {
 .memberships--container {
   display: flex;
   flex-direction: row;
-  padding-top: 40px;
+  margin-top: 120px;
 }
 
 .memberships__info--container {
@@ -154,7 +154,6 @@ section {
 
 .memberships__sub-title {
   font-size: 12px;
-  width: 350px;
   text-align: center;
   line-height: 1.5em;
   font-weight: 400;
@@ -171,7 +170,6 @@ section {
 }
 
 .memberships__info--block {
-  width: 400px;
   padding: 32px 24px;
   text-align: center;
   display: flex;
@@ -194,7 +192,7 @@ section {
 .memberships__info--block--para {
   font-size: 12px;
   font-weight: 400;
-  width: 300px;
+  max-width: 300px;
   line-height: 1.5em;
 }
 
@@ -211,8 +209,9 @@ section {
 .reviews--container {
   display: flex;
   flex-direction: column;
-  padding: 40px 48px 0 48px;
+  padding: 0px 48px 0 48px;
   color: #242424;
+  margin-top: 40px;
 }
 
 .reviews--nav {
@@ -244,4 +243,305 @@ section {
   display: flex;
   flex-direction: row;
   margin-top: 48px;
+}
+
+.user {
+  background-image: url(./assets/pexels-andrea-piacquadio-762020.jpg);
+  background-size: cover;
+  background-position: 50% 50%;
+  color: white;
+  height: 500px;
+  margin: 0 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.user__review {
+  height: 50%;
+  width: 90%;
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.fa-star {
+  margin-right: 4px;
+}
+
+.user-name {
+  margin-top: 12px;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+
+.user__review--para {
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+/* BLOG */
+
+.blog--container {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 48px 0 48px;
+  color: #242424;
+  margin-top: 80px;
+}
+
+.blog--nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog--header {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.blog__nav--button {
+  height: 40px;
+  width: 120px;
+  border-radius: 8px;
+  background-color: #242424;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.blog--sub-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 16px;
+}
+
+.blog--posts {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.blog--post {
+  margin: 0 16px;
+}
+
+.post__img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.post__title--container {
+  margin: 24px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.post__title {
+  font-size: 22px;
+  height: 60px;
+}
+
+.fa-arrow-right {
+  margin-top: 4px;
+}
+
+.post__description {
+  color: gray;
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+.post__author--container {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.author__photo--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.author__photo {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author--text {
+  margin-left: 16px;
+}
+
+.author--name {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.post--date {
+  font-weight: 500;
+  color: gray;
+}
+
+/* CONTACT */
+
+#contact {
+  height: 50vh;
+}
+
+.contact--container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.contact__img {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.contact__title {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-top: 24px;
+}
+
+.contact__para {
+  font-size: 16px;
+  color: gray;
+  margin-top: 16px;
+}
+
+.contact__button {
+  margin-top: 24px;
+  height: 40px;
+  width: 120px;
+  border-radius: 8px;
+  background-color: #242424;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+/* FOOTER */
+
+#footer {
+  background-color: #242424;
+  height: 40vh;
+}
+
+.footer--container {
+  padding: 24px 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer__logos--container {
+  padding-top: 24px;
+}
+
+.footer__logos__text {
+  color: gray;
+  margin-top: 16px;
+}
+
+.footer__app-store {
+  margin-top: 24px;
+}
+
+.footer__play-store {
+  margin-top: 16px;
+}
+
+.footer__links--container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__link__title {
+  color: gray;
+}
+
+.footer__link--container {
+  list-style-type: none;
+  margin-top: 24px;
+}
+
+.footer__link {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 1100px) {
+  .memberships__info--block--para {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .memberships__info--block--icon {
+    font-size: 40px;
+  }
+  .memberships__info--block--title {
+    font-size: 12px;
+  }
+  .memberships__info--block {
+    padding: 12px;
+  }
+}
+
+@media (max-width: 900px) {
+  .memberships__screenshot {
+    display: none;
+  }
+  .memberships__info--container {
+    width: 100%;
+  }
+}
+
+/* Small phones, tablets, large smart phones */
+@media (max-width: 768px) {
+  .nav__link {
+    font-size: 12px;
+  }
+  .user__review--para {
+    display: none;
+  }
+  .user:last-child {
+    display: none;
+  }
+  .user {
+    width: 40%;
+  }
+  .user__review {
+    height: 20%;
+  }
+  #memberships {
+    height: 40vh;
+  }
+  .blog--post:last-child {
+    display: none;
+  }
+}
+
+/* Small Phones */
+
+@media (max-width: 480px) {
 }

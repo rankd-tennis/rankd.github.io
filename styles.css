@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "roboto";
+}
+
+section {
+  padding: 0 40px;
+  height: 100vh;
+}
+
+.row {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.link__hover--effect {
+  position: relative;
+}
+
+.link__hover--effect::after {
+  content: "";
+  position: absolute;
+  background-color: white;
+  height: 3px;
+  width: 100%;
+  left: 0;
+  bottom: -3px;
+  opacity: 0;
+  transition: all 500ms ease;
+}
+
+.link__hover--effect:hover::after {
+  opacity: 1;
+}
+
+/* SPLASH */
+
+#splash {
+  background-image: url(./assets/pexels-cottonbro-5740797.jpg);
+  background-size: cover;
+}
+
+.nav {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rankd__logo--container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rankd__logo {
+  width: 120px;
+}
+
+.nav__links--container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.nav__links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style-type: none;
+}
+
+.nav__link {
+  padding-left: 24px;
+}
+
+.nav__link--text {
+  text-decoration: none;
+  color: white;
+}
+
+.app-store {
+  margin-left: 32px;
+  margin-right: 16px;
+}
+
+.store-button {
+  width: 120px;
+  cursor: pointer;
+}
+
+.header--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25vh;
+}
+
+.splash--title {
+  width: 400px;
+  margin-top: 24px;
+  font-size: 42px;
+  line-height: 1.5em;
+  color: #faf9f6;
+  text-align: center;
+}
+
+.splash--sub-title {
+  font-size: 12px;
+  font-weight: 400;
+  color: lightgray;
+}
+
+/* MEMBERSHIPS */
+
+#memberships {
+  background-color: white;
+}
+
+.memberships--container {
+  display: flex;
+  flex-direction: row;
+  padding-top: 40px;
+}
+
+.memberships__info--container {
+  color: #242424;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.memberships__title--container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.memberships__title {
+  font-size: 48px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.memberships__sub-title {
+  font-size: 12px;
+  width: 350px;
+  text-align: center;
+  line-height: 1.5em;
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+.memberships__info--blocks {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.memberships__info--block {
+  width: 400px;
+  padding: 32px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.memberships__info--block--icon {
+  font-size: 80px;
+  margin-bottom: 16px;
+  color: #242424;
+}
+
+.memberships__info--block--title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.memberships__info--block--para {
+  font-size: 12px;
+  font-weight: 400;
+  width: 300px;
+  line-height: 1.5em;
+}
+
+.memberships__screenshot {
+  height: 600px;
+}
+
+/* REVIEWS */
+
+#reviews {
+  background-color: white;
+}
+
+.reviews--container {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 48px 0 48px;
+  color: #242424;
+}
+
+.reviews--nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.reviews__stores--container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.reviews__title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.reviews__sub-title {
+  margin-top: 24px;
+  color: gray;
+  font-weight: 500;
+}
+
+.users {
+  display: flex;
+  flex-direction: row;
+  margin-top: 48px;
+}

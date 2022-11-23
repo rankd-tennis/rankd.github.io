@@ -13,6 +13,16 @@
       src="https://kit.fontawesome.com/f917fe56f5.js"
       crossorigin="anonymous"
     ></script>
+    <script src="index.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("v3NxKCT8ZSbInMBEf");
+      })();
+    </script>
     <title>Rankd Tennis League</title>
   </head>
   <body>
@@ -23,42 +33,30 @@
             <img src="./assets/RankdLogo.png" alt="" class="rankd__logo" />
           </figure>
           <div class="nav__links--container">
-            <ul class="nav__links">
-              <li class="nav__link">
-                <a href="#" class="nav__link--text link__hover--effect">Home</a>
-              </li>
-              <li class="nav__link">
-                <a href="#" class="nav__link--text link__hover--effect">Blog</a>
-              </li>
-              <li class="nav__link">
-                <a href="#" class="nav__link--text link__hover--effect"
-                  >Resources</a
-                >
-              </li>
-              <li class="nav__link">
-                <a href="#" class="nav__link--text link__hover--effect"
-                  >About Us</a
-                >
-              </li>
-            </ul>
-            <figure class="nav__download--button">
-              <img
-                src="./assets/appstore.png"
-                alt=""
-                class="app-store store-button"
-              />
-            </figure>
-            <figure class="nav__download--button">
+            <a
+              href="https://apps.apple.com/ca/app/rankd-national-tennis-league/id1574120171"
+              target="_blank"
+              class="nav__link app-store"
+            >
+              <img src="./assets/appstore.png" alt="" class="store-button" />
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.rankd&hl=en&gl=US"
+              target="_blank"
+              class="nav__link"
+            >
               <img
                 src="./assets/googstore.png"
                 alt=""
                 class="play-store store-button"
               />
-            </figure>
+            </a>
           </div>
         </div>
         <div class="header--container">
-          <h2 class="splash--sub-title">Match. Meet. Play.</h2>
+          <h2 class="splash--sub-title">
+            Conveniently play matches at a Tennis Court near you!
+          </h2>
           <h1 class="splash--title">The fastest way to play tennis.</h1>
         </div>
       </div>
@@ -74,56 +72,75 @@
             </h3>
           </div>
           <div class="memberships__info--blocks">
-            <div class="memberships__info--block">
-              <i class="fa-solid fa-users memberships__info--block--icon"></i>
-              <h3 class="memberships__info--block--title">
-                MATCHES MADE MINUTES AWAY
-              </h3>
-              <p class="memberships__info--block--para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-                amet, quam necessitatibus quaerat voluptates
-              </p>
+            <div class="memberships__info--block--column">
+              <div class="memberships__info--block">
+                <i class="fa-solid fa-users memberships__info--block--icon"></i>
+                <h3 class="memberships__info--block--title">
+                  MATCHES MADE MINUTES AWAY
+                </h3>
+                <p class="memberships__info--block--para">
+                  Our matchmaking system automatically determines the best
+                  tennis court near you & your partner.
+                </p>
+              </div>
+              <div class="memberships__info--block">
+                <i
+                  class="fa-solid fa-square-check memberships__info--block--icon"
+                ></i>
+                <h3 class="memberships__info--block--title">
+                  VERIFIED OPPONENTS
+                </h3>
+                <p class="memberships__info--block--para">
+                  Opponents are verified through Amazon & Google face detection.
+                </p>
+              </div>
             </div>
-            <div class="memberships__info--block">
-              <i
-                class="fa-solid fa-square-check memberships__info--block--icon"
-              ></i>
-              <h3 class="memberships__info--block--title">
-                VERIFIED OPPONENTS
-              </h3>
-              <p class="memberships__info--block--para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-                amet, quam necessitatibus quaerat voluptates
-              </p>
+            <div class="memberships__info--block--column">
+              <div class="memberships__info--block">
+                <i
+                  class="fa-solid fa-user-check memberships__info--block--icon"
+                ></i>
+                <h3 class="memberships__info--block--title">
+                  1000+ MATCHES PLAYED
+                </h3>
+                <p class="memberships__info--block--para">
+                  Over a thousand matches played using the app at ideal tennis
+                  courts near both players.
+                </p>
+              </div>
             </div>
-            <div class="memberships__info--block">
-              <i
-                class="fa-solid fa-calendar memberships__info--block--icon"
-              ></i>
-              <h3 class="memberships__info--block--title">
-                PLAY WHEN YOU WANT
-              </h3>
-              <p class="memberships__info--block--para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-                amet, quam necessitatibus quaerat voluptates
-              </p>
-            </div>
-            <div class="memberships__info--block">
-              <i class="fa-solid fa-sliders memberships__info--block--icon"></i>
-              <h3 class="memberships__info--block--title">
-                CURATED SKILL LEVELS
-              </h3>
-              <p class="memberships__info--block--para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa
-                amet, quam necessitatibus quaerat voluptates
-              </p>
+            <div class="memberships__info--block--column">
+              <div class="memberships__info--block">
+                <i
+                  class="fa-solid fa-calendar memberships__info--block--icon"
+                ></i>
+                <h3 class="memberships__info--block--title">
+                  PLAY WHEN YOU WANT
+                </h3>
+                <p class="memberships__info--block--para">
+                  Set the hours when you want to play & we'll find opponents
+                  that fit your schedule.
+                </p>
+              </div>
+              <div class="memberships__info--block">
+                <i
+                  class="fa-solid fa-sliders memberships__info--block--icon"
+                ></i>
+                <h3 class="memberships__info--block--title">
+                  CURATED SKILL LEVELS
+                </h3>
+                <p class="memberships__info--block--para">
+                  Choose your opponent based on your current RANKD skill level.
+                  Skill levels are adjusted after each competetive match.
+                </p>
+              </div>
             </div>
           </div>
         </div>
         <div class="memberships__screenshot--container">
           <figure>
             <img
-              src="./assets/Simulator Screen Shot - iPhone 13 - 2022-08-23 at 15.19.20.png"
+              src="./assets/RankdScreenshot.png"
               alt=""
               class="memberships__screenshot"
             />
@@ -136,25 +153,35 @@
         <div class="reviews--nav">
           <h2 class="reviews__title">Don't just take our word for it</h2>
           <div class="reviews__stores--container">
-            <figure class="nav__download--button">
-              <img
-                src="./assets/appstore.png"
-                alt=""
-                class="app-store store-button"
-              />
-            </figure>
-            <figure class="nav__download--button">
-              <img
-                src="./assets/googstore.png"
-                alt=""
-                class="play-store store-button"
-              />
-            </figure>
+            <div class="nav__links--container">
+              <a
+                href="https://apps.apple.com/ca/app/rankd-national-tennis-league/id1574120171"
+                target="_blank"
+                class="nav__link app-store"
+              >
+                <img
+                  src="./assets/appstore.png"
+                  alt=""
+                  class="store-button review__link"
+                />
+              </a>
+              <a
+                href="https://play.google.com/store/apps/details?id=com.rankd&hl=en&gl=US"
+                target="_blank"
+                class="nav__link"
+              >
+                <img
+                  src="./assets/googstore.png"
+                  alt=""
+                  class="play-store store-button review__link"
+                />
+              </a>
+            </div>
           </div>
         </div>
         <h3 class="reviews__sub-title">Hear from some of our users.</h3>
         <div class="users">
-          <div class="user">
+          <div class="user user-1">
             <div class="user__review">
               <div class="user__review__stars--container">
                 <i class="fa-solid fa-star"></i>
@@ -165,12 +192,12 @@
               </div>
               <h3 class="user-name">Alisa Hester</h3>
               <p class="user__review--para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-                officiis dicta odio praesentium ullam
+                "Fun app! Was a good way to meet a new player around my skill
+                level. A bit intimidating at first but I'm glad I went through"
               </p>
             </div>
           </div>
-          <div class="user">
+          <div class="user user-2">
             <div class="user__review">
               <div class="user__review__stars--container">
                 <i class="fa-solid fa-star"></i>
@@ -179,14 +206,13 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
               </div>
-              <h3 class="user-name">Alisa Hester</h3>
+              <h3 class="user-name">Rich Wilson</h3>
               <p class="user__review--para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-                officiis dicta odio praesentium ullam
+                "Game changer. Found a partner in 5 minutes, amazing!"
               </p>
             </div>
           </div>
-          <div class="user">
+          <div class="user user-3">
             <div class="user__review">
               <div class="user__review__stars--container">
                 <i class="fa-solid fa-star"></i>
@@ -195,114 +221,10 @@
                 <i class="fa-solid fa-star"></i>
                 <i class="fa-solid fa-star"></i>
               </div>
-              <h3 class="user-name">Alisa Hester</h3>
+              <h3 class="user-name">Annie Stanley</h3>
               <p class="user__review--para">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
-                officiis dicta odio praesentium ullam
+                "By far the best way to find a tennis court near me!"
               </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="blog">
-      <div class="row blog--container">
-        <div class="blog--nav">
-          <h2 class="blog--header">Latest blog posts</h2>
-          <button class="blog__nav--button">View all posts</button>
-        </div>
-        <h3 class="blog--sub-title">Our blog</h3>
-        <div class="blog--posts">
-          <div class="blog--post">
-            <figure class="post__img--container">
-              <img
-                src="./assets/pexels-jim-de-ramos-1277397.jpg"
-                alt=""
-                class="post__img"
-              />
-            </figure>
-            <div class="post__title--container">
-              <h3 class="post__title">
-                Quick & Dirty Guide to Tennis Racquets
-              </h3>
-              <i class="fa-solid fa-arrow-right"></i>
-            </div>
-            <p class="post__description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta
-              magnam ut possimus.
-            </p>
-            <div class="post__author--container">
-              <figure class="author__photo--container">
-                <img
-                  src="./assets/pexels-andrea-piacquadio-762020.jpg"
-                  alt=""
-                  class="author__photo"
-                />
-              </figure>
-              <div class="author--text">
-                <p class="author--name">Olivia Rhye</p>
-                <p class="post--date">20 Jan 2022</p>
-              </div>
-            </div>
-          </div>
-          <div class="blog--post">
-            <figure class="post__img--container">
-              <img
-                src="./assets/pexels-jim-de-ramos-1277397.jpg"
-                alt=""
-                class="post__img"
-              />
-            </figure>
-            <div class="post__title--container">
-              <h3 class="post__title">Types of Tennis Sets</h3>
-              <i class="fa-solid fa-arrow-right"></i>
-            </div>
-            <p class="post__description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta
-              magnam ut possimus.
-            </p>
-            <div class="post__author--container">
-              <figure class="author__photo--container">
-                <img
-                  src="./assets/pexels-andrea-piacquadio-762020.jpg"
-                  alt=""
-                  class="author__photo"
-                />
-              </figure>
-              <div class="author--text">
-                <p class="author--name">Olivia Rhye</p>
-                <p class="post--date">20 Jan 2022</p>
-              </div>
-            </div>
-          </div>
-          <div class="blog--post">
-            <figure class="post__img--container">
-              <img
-                src="./assets/pexels-jim-de-ramos-1277397.jpg"
-                alt=""
-                class="post__img"
-              />
-            </figure>
-            <div class="post__title--container">
-              <h3 class="post__title">The Beginner's Guide to Tennis</h3>
-              <i class="fa-solid fa-arrow-right"></i>
-            </div>
-            <p class="post__description">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta
-              magnam ut possimus.
-            </p>
-            <div class="post__author--container">
-              <figure class="author__photo--container">
-                <img
-                  src="./assets/pexels-andrea-piacquadio-762020.jpg"
-                  alt=""
-                  class="author__photo"
-                />
-              </figure>
-              <div class="author--text">
-                <p class="author--name">Olivia Rhye</p>
-                <p class="post--date">20 Jan 2022</p>
-              </div>
             </div>
           </div>
         </div>
@@ -322,7 +244,29 @@
           Can't find the answer you're looking for? Please chat to our friendly
           team.
         </p>
-        <button class="contact__button">Get in touch</button>
+        <form onsubmit="contact(event)" id="contact__form">
+          <div class="form__item">
+            <label class="form__item--label">Name</label>
+            <input class="input" name="user_name" type="text" />
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Email</label>
+            <input class="input" name="user_email" type="email" />
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Message</label>
+            <textarea class="input" name="message" type="text"></textarea>
+          </div>
+          <button id="contact__submit" class="form__submit contact__button">
+            Get in touch
+          </button>
+        </form>
+        <div class="modal__overlay modal__overlay--loading">
+          <i class="fas fa-spinner"></i>
+        </div>
+        <div class="modal__overlay modal__overlay--success">
+          Thanks for the message! We will get back to you soon.
+        </div>
       </div>
     </section>
     <footer id="footer">
@@ -332,63 +276,27 @@
             <img src="./assets/RankdLogo.png" alt="" class="rankd__logo" />
           </figure>
           <p class="footer__logos__text">Match. Meet. Play</p>
-          <figure class="footer__download--button">
-            <img
-              src="./assets/appstore.png"
-              alt=""
-              class="footer__app-store store-button"
-            />
-          </figure>
-          <figure class="footer__download--button">
-            <img
-              src="./assets/googstore.png"
-              alt=""
-              class="footer__play-store store-button"
-            />
-          </figure>
-        </div>
-        <div class="footer__links--container">
-          <p class="footer__link__title">PRODUCT</p>
-          <ul class="footer__links">
-            <li class="footer__link--container">
-              <a href="#" class="footer__link link__hover--effect">Overview</a>
-            </li>
-            <li class="footer__link--container">
-              <a href="#" class="footer__link link__hover--effect">Features</a>
-            </li>
-            <li class="footer__link--container">
-              <a href="#" class="footer__link link__hover--effect">Tutorial</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__links--container">
-          <p class="footer__link__title">COMPANY</p>
-          <ul class="footer__links">
-            <li class="footer__link--container">
-              <a href="#" class="footer__link link__hover--effect">About us</a>
-            </li>
-            <li class="footer__link--container">
-              <a href="#" class="footer__link link__hover--effect"
-                >Meet the team</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="footer__links--container">
-          <p class="footer__link__title">RESOURCES</p>
-          <ul class="footer__links">
-            <li class="footer__link--container">
-              <a href="#" class="footer__link link__hover--effect">Blog</a>
-            </li>
-            <li class="footer__link--container">
-              <a href="#" class="footer__link link__hover--effect">FAQ</a>
-            </li>
-            <li class="footer__link--container">
-              <a href="#" class="footer__link link__hover--effect"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
+          <div class="nav__links--container footer__links">
+            <a
+              href="https://apps.apple.com/ca/app/rankd-national-tennis-league/id1574120171"
+              target="_blank"
+              class="nav__link app-store"
+            >
+              <img src="./assets/appstore.png" alt="" class="store-button" />
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.rankd&hl=en&gl=US"
+              target="_blank"
+              class="nav__link"
+            >
+              <img
+                src="./assets/googstore.png"
+                alt=""
+                class="play-store store-button"
+              />
+            </a>
+          </div>
+          <p class="footer__trademark">Copyright © Rankd 2022</p>
         </div>
       </div>
     </footer>

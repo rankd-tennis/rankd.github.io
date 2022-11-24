@@ -312,6 +312,7 @@ section {
 
 .contact__para {
   font-size: 16px;
+  max-width: 90%;
   color: gray;
   margin-top: 16px;
   margin-bottom: 40px;
@@ -468,6 +469,9 @@ textarea {
     }
     .reviews__title {
       font-size: 24px;
+    }
+    .splash--title {
+      font-size: 32px;
     }
   }
 }

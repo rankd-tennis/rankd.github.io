@@ -37,17 +37,23 @@
               href="https://apps.apple.com/ca/app/rankd-national-tennis-league/id1574120171"
               target="_blank"
               class="nav__link app-store"
+              aria-label="Download app for iPhone"
             >
-              <img src="./assets/appstore.webp" alt="" class="store-button" />
+              <img
+                src="./assets/appstore.webp"
+                alt="App Store Logo"
+                class="store-button"
+              />
             </a>
             <a
               href="https://play.google.com/store/apps/details?id=com.rankd&hl=en&gl=US"
               target="_blank"
               class="nav__link"
+              aria-label="Download app for Android"
             >
               <img
                 src="./assets/googstore.webp"
-                alt=""
+                alt="Play Store Logo"
                 class="play-store store-button"
               />
             </a>
@@ -141,7 +147,7 @@
           <figure>
             <img
               src="./assets/rankdScreenshot.webp"
-              alt=""
+              alt="Rankd App Screenshot"
               class="memberships__screenshot"
             />
           </figure>
@@ -158,10 +164,11 @@
                 href="https://apps.apple.com/ca/app/rankd-national-tennis-league/id1574120171"
                 target="_blank"
                 class="nav__link app-store"
+                aria-label="Download app for iPhone"
               >
                 <img
                   src="./assets/appstore.webp"
-                  alt=""
+                  alt="App Store Logo"
                   class="store-button review__link"
                 />
               </a>
@@ -169,10 +176,11 @@
                 href="https://play.google.com/store/apps/details?id=com.rankd&hl=en&gl=US"
                 target="_blank"
                 class="nav__link"
+                aria-label="Download app for Android"
               >
                 <img
                   src="./assets/googstore.webp"
-                  alt=""
+                  alt="Play Store Logo"
                   class="play-store store-button review__link"
                 />
               </a>
@@ -233,7 +241,11 @@
     <section id="contact">
       <div class="row contact--container">
         <figure class="contact__img--container">
-          <img src="./assets/contactimg.webp" alt="" class="contact__img" />
+          <img
+            src="./assets/contactimg.webp"
+            alt="Rankd Team :)"
+            class="contact__img"
+          />
         </figure>
         <p class="contact__title">Still have questions?</p>
         <p class="contact__para">
@@ -242,16 +254,21 @@
         </p>
         <form onsubmit="contact(event)" id="contact__form">
           <div class="form__item">
-            <label class="form__item--label">Name</label>
-            <input class="input" name="user_name" type="text" />
+            <label class="form__item--label" for="name">Name</label>
+            <input class="input" name="user_name" type="text" id="name" />
           </div>
           <div class="form__item">
-            <label class="form__item--label">Email</label>
-            <input class="input" name="user_email" type="email" />
+            <label class="form__item--label" for="email">Email</label>
+            <input class="input" name="user_email" type="email" id="email" />
           </div>
           <div class="form__item">
-            <label class="form__item--label">Message</label>
-            <textarea class="input" name="message" type="text"></textarea>
+            <label class="form__item--label" for="message">Message</label>
+            <textarea
+              class="input"
+              name="message"
+              type="text"
+              id="message"
+            ></textarea>
           </div>
           <button id="contact__submit" class="form__submit contact__button">
             Get in touch
@@ -269,7 +286,11 @@
       <div class="row footer--container">
         <div class="footer__logos--container">
           <figure class="footer__rankd__logo--container">
-            <img src="./assets/rankdLogo.webp" alt="" class="rankd__logo" />
+            <img
+              src="./assets/rankdLogo.webp"
+              alt="Rankd Logo"
+              class="rankd__logo"
+            />
           </figure>
           <p class="footer__logos__text">Match. Meet. Play</p>
           <div class="nav__links--container footer__links">
@@ -277,8 +298,13 @@
               href="https://apps.apple.com/ca/app/rankd-national-tennis-league/id1574120171"
               target="_blank"
               class="nav__link app-store"
+              aria-label="Download app for iPhone"
             >
-              <img src="./assets/appstore.webp" alt="" class="store-button" />
+              <img
+                src="./assets/appstore.webp"
+                alt="App Store Logo"
+                class="store-button"
+              />
             </a>
             <a
               href="https://play.google.com/store/apps/details?id=com.rankd&hl=en&gl=US"
@@ -287,8 +313,9 @@
             >
               <img
                 src="./assets/googstore.webp"
-                alt=""
+                alt="Play Store Logo"
                 class="play-store store-button"
+                aria-label="Download app for Android"
               />
             </a>
           </div>

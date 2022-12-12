@@ -473,5 +473,8 @@ textarea {
     .splash--title {
       font-size: 32px;
     }
+    .memberships__title {
+      padding: 0;
+    }
   }
 }

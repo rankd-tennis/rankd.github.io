@@ -467,7 +467,8 @@ textarea {
     .reviews__stores--container {
       display: none;
     }
-    .reviews__title {
+    .reviews__title,
+    .memberships__title {
       font-size: 24px;
     }
     .splash--title {

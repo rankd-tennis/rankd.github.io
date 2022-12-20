@@ -339,7 +339,7 @@ section {
 }
 
 .wreath-1 {
-  left: -48px;
+  left: -56px;
 }
 
 .wreath-2 {
@@ -503,7 +503,7 @@ textarea {
 }
 
 .sponsors__title {
-  color: #f5f5f5;
+  color: gray;
 }
 
 /* Small phones, tablets, large smart phones */
@@ -530,7 +530,7 @@ textarea {
     width: 100%;
   }
   .milestone {
-    margin-top: 24px;
+    margin-top: 56px;
   }
   .wreath-2 {
     transform: scaleX(-1);
